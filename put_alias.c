@@ -24,7 +24,7 @@ void put_alias()
         if (bashOrZsh == 1)
             fd = open(_bashrc, O_WRONLY | O_APPEND);
         if (bashOrZsh == 2)
-            fd = open(_zshrc, O_RDWR);
+            fd = open(_zshrc, O_WRONLY | O_APPEND);
 
         if (dprintf(fd, "\nalias %s='%s'", alias, macro) > 0)
         {
