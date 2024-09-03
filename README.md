@@ -17,7 +17,7 @@
 </p>
 
 
-Who hasn't had problems adding aliases to their linux? Or setting a hostname? Don't complicate things, use zfAlias
+Who hasn't had problems adding aliases to their linux? Or setting a hostname? Don't complicate things, use **zfAlias**
 
 ## About zfAlias
 To create a more interesting and dynamic environment for programmers, I thought of creating a tool that injects information into files, for example aliases or hostnames. Going directly to put an alias seems very boring and sometimes we just don't do it and continue doing more extensive tasks, running a light program to add it for you seems easier, doesn't it?
