@@ -25,7 +25,8 @@ void put_alias()
             fd = open(_bashrc, O_WRONLY | O_APPEND);
         if (bashOrZsh == 2)
             fd = open(_zshrc, O_WRONLY | O_APPEND);
-
+        if(bashOrZsh != 1 || bashOrZsh != 2 )
+                return ;
         if (dprintf(fd, "\nalias %s='%s'", alias, macro) > 0)
         {
             printf("\e[102m Sucess alias created \e[49m\n\n");
